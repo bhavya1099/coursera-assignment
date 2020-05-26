@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0px;
+        }
+        .features{
+            display:inline;
+        }
+        
+        ul{
+            list-style:none;
+            padding:0;
+        }
+        li{
+            display: inline-block;
+            margin-left:20px;
+        }
+        header{
+            margin:0px;
+            text-align:center;
+            background-color: black;
+            background-image: url("coffeefotos/coffee3.jpg");
+            background-size:100%;
+            background-position:center;
+            color:white;
+            height:400px;
+        }
+        section{
+            margin:15px;
+            display:flex;
+            flex-direction: row;
+        }
+        div{
+            /*display:inline-block;*/
+            background-color: red;
+            width:100px;
+            margin:auto;
+        }
+        footer{
+            margin-top:10px;
+            padding:5px 10px;
+            background: black;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="coffeesite.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li class="logo"><a href="artbakery">artisans bakery</a></li>
+                <li><a href="location.html">Locations</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            </nav>
+            <h1>Home</h1>
+    </header>
+    <section class="features" >
+        <figure><img src="coffeefotos/coffee1.jpg"></figure>
+       <figcaption>Coffee</figcaption> 
+        <figure><img src="coffeefotos/cookies.jpg"></figure>
+        <figcaption>Homemade Cookies</figcaption>
+        <figure><img src="coffeefotos/coffee2.jpg"></figure>
+        <figcaption>Homemade Coffee</figcaption>
+    </section>
+    <footer>footer</footer>
+</body>
+</html>
