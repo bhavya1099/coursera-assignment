@@ -6,7 +6,7 @@
     <title>Restaurant Website</title>
     <link href="bootstrap-3.4.1-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <link href="bootstrap" rel="stylesheet">
+    <!-- <link href="bootstrap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
 </head>
 <body class="body">
@@ -34,13 +34,13 @@
               </div>
               <div id="collapsable-nav" class="collapse navbar-collapse">
                   <ul id="nav-list" class="nav navbar-nav navbar-right">
-                    <li class="visible-xs ">
+                    <li id="navHomeButton" class="visible-xs active">
                         <a href="index.html">
-                            <span class="glyphicon glyphicon-home"></span><br class="hidden-xs">Home
+                            <span class="glyphicon glyphicon-home"></span>Home
                         </a>
                     </li> 
-                   <li>
-                          <a href="menu-categories.html">
+                   <li id="navMenuButton">
+                          <a href="#" onclick="$dc.loadMenuCategories();">
                               <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs">Menu
                           </a>
                       </li>
@@ -70,8 +70,8 @@
     <a class="btn" href="tel:410-602-5008">
         <span class="glyphicon glyphicon-earphone"></span>410-602-5008</a></div>
   <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
-<div id="main-content" class="container">
-    <div class="jumbotron">
+<div id="main-content" class="container"></div>
+    <!-- <div class="jumbotron">
         <img src="restphoto.png" alt="Picture of the restaurant" class="img-responsive visible-xs">
     </div>
     <div id="home-tiles" class="row">
@@ -91,8 +91,8 @@
                 </div>
             </a>
             </div>
-        </div>end of #home tile
-    </div><!--end of #main-content -->
+        </div>end of #home tile -->
+    <!--end of #main-content -->
 <footer class="panel-footer">
     <div class="container">
         <div class="row">
@@ -119,8 +119,7 @@
         </div>
         <div class="text-center">&copy; Copyright David Chu's China Bistro 2015</div>
     </div>
-</footer>
-</div>   
+</footer>   
 <!-- (function(global){
     var dc = {};
     var homeHTML = "snippets/home-snippet.html";
@@ -131,11 +130,13 @@
 <!-- <script src="bootstrap-3.4.1-dist/js/jquery-3.5.0.min.js"></script>
 <script src="bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
 <script src="bootstrap-3.4.1-dist/js/npm.js"></script>  -->
-<script src="script.js"></script>;
+
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" 
 integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
 integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
 crossorigin="anonymous"></script>
+<script src="ajax-utils.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
